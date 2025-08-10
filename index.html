@@ -1,102 +1,175 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R Arulbabu - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="R Arulbabu — Web Developer Portfolio" />
+  <title>R Arulbabu | web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-…snip…" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header>
-        <nav>
-            <h1>R Arulbabu</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- NAV-->
+  <header>
+    <nav class="container">
+      <a href="#home" class="logo">R Arulbabu</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+    </nav>
+  </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section home">
-        <div class="home-content">
-            <img src="profile.jpg" alt="R Arulbabu" class="profile-img">
-            <h2> Web Developer</h2>
-            <p>Turning ideas into beautiful, functional, and impactful digital experiences.</p>
-            <a href="#portfolio" class="btn">View My Work</a>
-            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <img src="profile.jpg" alt="Profile of R Arulbabu" class="profile-pic" />
+      <h1>R Arulbabu</h1>
+      <p class="title"> Web Developer</p>
+      <p class="tagline">Turning ideas into beautiful, functional, and impactful digital experiences.</p>
+      <div class="cta">
+        <a href="#skills" class="btn primary">View My skills</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate and detail-oriented front-end developer who loves crafting clean, user-friendly websites. Continuously learning and staying up-to-date with the latest web trends.</p>
+      <h3>Education</h3>
+      <ul>
+        <li><strong>B.E. Computer Science</strong> — University of SRIET, Coimbatore (2028)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section fade-in">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <i class="fab fa-html5"></i><span>HTML</span>
+          <div class="bar"><div style="width: 95%"></div></div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer who loves creating clean, functional, and user-friendly websites. With a keen eye for detail and a drive for continuous learning, I turn ideas into beautiful digital experiences.</p>
-        <ul>
-            <li><strong>Degree:</strong> Bachelor of Engineering in Computer Science</li>
-            <li><strong>Institution:</strong> University of SRIET, Coimbatore</li>
-            <li><strong>Year of Graduation:</strong> 2028</li>
-            <li><strong>Status:</strong> Learner</li>
-        </ul>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Front-End Development</li>
-            <li>Creativity</li>
-            <li>Responsive Design</li>
-            <li>Continuous Learning</li>
-        </ul>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="section services">
-        <h2>Services</h2>
-        <div class="service-cards">
-            <div class="card">Web Design & Development</div>
-            <div class="card">UI/UX Implementation</div>
-            <div class="card">Responsive Website Creation</div>
-            <div class="card">API Development & Integration</div>
-            <div class="card">Progressive Web App Development</div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i><span>CSS</span>
+          <div class="bar"><div style="width: 90%"></div></div>
         </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-gallery">
-            <div class="portfolio-item">Portfolio Web Designer</div>
-            <div class="portfolio-item">Interactive Web Application</div>
-            <div class="portfolio-item">Progressive Web App (PWA)</div>
-            <div class="portfolio-item">API Development & Integration</div>
+        <div class="skill">
+          <i class="fab fa-js-square"></i><span>JavaScript</span>
+          <div class="bar"><div style="width: 85%"></div></div>
         </div>
-    </section>
+        <div class="skill">
+          <i class="fas fa-laptop-code"></i><span>Frontend Dev</span>
+          <div class="bar"><div style="width: 88%"></div></div>
+        </div>
+        <div class="skill">
+          <i class="fas fa-lightbulb"></i><span>Creativity</span>
+          <div class="bar"><div style="width: 80%"></div></div>
+        </div>
+        <div class="skill">
+          <i class="fas fa-graduation-cap"></i><span>Continuous Learning</span>
+          <div class="bar"><div style="width: 92%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <h2>Contact</h2>
-        <p><strong>Location:</strong> Kallakurichi, Pushpagiri</p>
-        <p><strong>Mobile:</strong> +91 9626927722</p>
-        <p><strong>Email:</strong> <a href="mailto:rmarulbabu@gmail.com">rmarulbabu@gmail.com</a></p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
+  <!-- SERVICES -->
+  <section id="services" class="section fade-in">
+    <div class="container">
+      <h2>What I Do</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <i class="fas fa-code"></i>
+          <h3>Web Design & Dev</h3>
+          <p>Crafting responsive, accessible, and SEO-friendly websites.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>UI/UX Implementation</h3>
+          <p>Designing intuitive interfaces with user-centered workflows.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Responsive Design</h3>
+          <p>Ensuring seamless experiences across all devices.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-plug"></i>
+          <h3>API Integration</h3>
+          <p>Building & integrating RESTful APIs and microservices.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-fire-alt"></i>
+          <h3>Progressive Web Apps</h3>
+          <p>Delivering fast, offline-capable web applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section fade-in">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="cards-grid">
+        <!-- Repeat this card for each project -->
+        <div class="card project-card">
+          <img src="thumb1.png" alt="Project 1 Thumbnail" />
+          <h3>Portfolio Web Designer</h3>
+          <p>A modern portfolio layout showcasing my design skills.</p>
+          <a href="#" class="btn small">View Details</a>
+        </div>
+        <div class="card project-card">
+          <img src="thumb2.jpg" alt="Project 2 Thumbnail" 
+          <h3>Interactive Web App</h3>
+          <p>Dynamic app with real-time data bindings and charts.</p>
+          <a href="#" class="btn small">View Details</a>
+        </div>
+        <!-- … more projects … -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Kallakurichi, Pushpagiri</p>
+          <p><i class="fas fa-phone"></i> +91 9626927722</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:rmarulbabu@gmail.com">rmarulbabu@gmail.com</a></p>
+          <div class="social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p class="form-status" aria-live="polite"></p>
         </form>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
